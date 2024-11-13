@@ -1,87 +1,47 @@
-import {
-    blackImg,
-    blueImg,
-    highlightFirstVideo,
-    highlightFourthVideo,
-    highlightSecondVideo,
-    highlightThirdVideo,
-    whiteImg,
-    yellowImg,
-  } from "../utils";
-  
-  export const navLists = ["Store", "Mac", "iPhone", "Support"];
-  
-  export const hightlightsSlides = [
+import { iphone1Img, iphone2Img, iphone3Img, iphone4Img, iphone5Img, iphone6Img, iphone7Img, iphone8Img } from "../utils"
+
+
+export const navLists = ["Store", "Mac", "iPhone", "Support"]  
+
+export const getToKnowList = [
     {
-      id: 1,
-      textLists: [
-        "Enter A17 Pro.",
-        "Game‑changing chip.",
-        "Groundbreaking performance.",
-      ],
-      video: highlightFirstVideo,
-      videoDuration: 4,
+        image : iphone1Img,
+        heading1 : "Apple Intelligence",
+        heading2 : "Powerful possibilities"
     },
     {
-      id: 2,
-      textLists: ["Titanium.", "So strong. So light. So Pro."],
-      video: highlightSecondVideo,
-      videoDuration: 5,
+        image : iphone2Img,
+        heading1 : "Cutting-Edge Cameras",
+        heading2 : "Picture your best photos and videos"
     },
     {
-      id: 3,
-      textLists: [
-        "iPhone 15 Pro Max has the",
-        "longest optical zoom in",
-        "iPhone ever. Far out.",
-      ],
-      video: highlightThirdVideo,
-      videoDuration: 2,
+        image : iphone3Img,
+        heading1 : "Chip and Battery Life",
+        heading2 : "Fast that Lasts"
     },
     {
-      id: 4,
-      textLists: ["All-new Action button.", "What will yours do?."],
-      video: highlightFourthVideo,
-      videoDuration: 3.63,
-    },
-  ];
-  
-  export const models = [
-    {
-      id: 1,
-      title: "iPhone 15 Pro in Natural Titanium",
-      color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
-      img: yellowImg,
+        image : iphone4Img,
+        heading1 : "Innovation",
+        heading2 : "Beautiful and durable, by design."
     },
     {
-      id: 2,
-      title: "iPhone 15 Pro in Blue Titanium",
-      color: ["#53596E", "#6395ff", "#21242e"],
-      img: blueImg,
+        image : iphone5Img,
+        heading1 : "Enviroment",
+        heading2 : "Recycle.Reuse.Repeat"
     },
     {
-      id: 3,
-      title: "iPhone 15 Pro in White Titanium",
-      color: ["#C9C8C2", "#ffffff", "#C9C8C2"],
-      img: whiteImg,
+        image : iphone6Img,
+        heading1 : "Privacy",
+        heading2 : "Your data. Just where you want it."
     },
     {
-      id: 4,
-      title: "iPhone 15 Pro in Black Titanium",
-      color: ["#454749", "#3b3b3b", "#181819"],
-      img: blackImg,
+        image : iphone7Img,
+        heading1 : "Customise your iphone",
+        heading2 : "Make it you. Through and through"
     },
-  ];
-  
-  export const sizes = [
-    { label: '6.1"', value: "small" },
-    { label: '6.7"', value: "large" },
-  ];
-  
-  export const footerLinks = [
-    "Privacy Policy",
-    "Terms of Use",
-    "Sales Policy",
-    "Legal",
-    "Site Map",
-  ];
+    {
+        image : iphone8Img,
+        heading1 : "Peace of Mind",
+        heading2 : "Helpful safety features. Just in case."
+    }
+]

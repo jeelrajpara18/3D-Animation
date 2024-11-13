@@ -1,13 +1,13 @@
 import Navbar from "./components/navbar";
 import Hero from "./components/hero"
-import Highlights from "./components/highlights";
+import GetToKnow from "./components/getToKnow";
 function App() {
   return (
     <>
       <main>
         <Navbar/>
         <Hero/>
-        <Highlights/>
+        <GetToKnow/>
       </main>
     </>
   );

@@ -9,11 +9,11 @@
 }
 
 body {
-  color: white;
+  color: black;
   width: 100dvw;
   overflow-x: hidden;
   height: 100%;
-  background: #000;
+  background: white;
   border-color: #3b3b3b;
   user-select: none;
 }
@@ -55,7 +55,7 @@ canvas {
   }
 
   .common-padding {
-    @apply sm:py-32 py-20 sm:px-10 px-5
+    @apply lg:px-14 lg:pb-10 px-6 pb-5
   }
 
   .section-heading {
@@ -87,7 +87,7 @@ canvas {
   }
 
   .hero-title {
-    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10
+    @apply font-semibold lg:text-7xl md:text-5xl text-4xl opacity-0 max-md:mb-0
   }
 
   .hiw-title {
@@ -121,4 +121,5 @@ canvas {
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
   }
+  
 }

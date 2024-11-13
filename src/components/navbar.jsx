@@ -8,7 +8,7 @@ const navbar = () => {
 
         <div className="flex flex-1 justify-center max-sm:hidden">
             {navLists.map((nav , index) => (
-                <div key={index} className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all">
+                <div key={index} className="px-5 text-sm cursor-pointer text-gray hover:text-black transition-all">
                     {nav}
                 </div>
             ))}

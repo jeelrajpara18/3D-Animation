@@ -1,6 +1,4 @@
-import hero from "/assets/images/hero.jpeg";
 
-export const heroImg = hero;
 
 import hmv from "/assets/videos/hero.mp4";
 import smallmv from "/assets/videos/smallHero.mp4";
@@ -20,14 +18,15 @@ import replay from "/assets/images/replay.svg";
 import play from "/assets/images/play.svg";
 import pause from "/assets/images/pause.svg";
 
-import yellow from "/assets/images/yellow.jpg";
-import blue from "/assets/images/blue.jpg";
-import white from "/assets/images/white.jpg";
-import black from "/assets/images/black.jpg";
-import explore1 from "/assets/images/explore1.jpg";
-import explore2 from "/assets/images/explore2.jpg";
-import chip from "/assets/images/chip.jpeg";
-import frame from "/assets/images/frame.png";
+
+import iphone1 from "/assets/images/iphone1.jpg";
+import iphone2 from "/assets/images/iphone2.jpg";
+import iphone3 from "/assets/images/iphone3.jpg";
+import iphone4 from "/assets/images/iphone4.jpg";
+import iphone5 from "/assets/images/iphone5.jpg";
+import iphone6 from "/assets/images/iphone6.jpg";
+import iphone7 from "/assets/images/iphone7.jpg";
+import iphone8 from "/assets/images/iphone8.jpg";
 
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
@@ -47,11 +46,11 @@ export const replayImg = replay;
 export const playImg = play;
 export const pauseImg = pause;
 
-export const yellowImg = yellow;
-export const blueImg = blue;
-export const whiteImg = white;
-export const blackImg = black;
-export const explore1Img = explore1;
-export const explore2Img = explore2;
-export const chipImg = chip;
-export const frameImg = frame;
+export const iphone1Img = iphone1;
+export const iphone2Img = iphone2;
+export const iphone3Img = iphone3;
+export const iphone4Img = iphone4;
+export const iphone5Img = iphone5;
+export const iphone6Img = iphone6;
+export const iphone7Img = iphone7;
+export const iphone8Img = iphone8;
