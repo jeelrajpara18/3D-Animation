@@ -54,7 +54,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center w-full">
+        <div className="flex justify-center items-center w-full relative">
           <video
             className="hero-video pointer-events-none w-full max-w-full h-full"
             autoPlay

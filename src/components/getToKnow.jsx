@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
 // import { rightImg, watchImg } from "../utils";
 import gsap from "gsap";
-import { Pagination , Keyboard } from "swiper/modules";
+import { Keyboard, Mousewheel, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { getToKnowList } from "../constants/index";
@@ -23,29 +23,36 @@ const GetToKnow = () => {
         </div>
         <div className="">
           <Swiper
-            slidesPerView={4}
-            spaceBetween={40}
+            slidesPerView={"auto"}
+            spaceBetween={50}
             pagination={{
               clickable: true,
             }}
-            Keyboard = {{enabled : true}}
-            modules={[Pagination , Keyboard]}
+            keyboard={{ enabled: true }}
+            modules={[Pagination, Keyboard , Mousewheel]}
+            allowTouchMove={false}
+            mousewheel={true}
             className="mySwiper"
           >
             {getToKnowList.map((list, index) => (
-                <SwiperSlide key={index}>
-                  <div className="border rounded-2xl overflow-hidden relative ">
-                    <img
-                      src={list.image}
-                      alt="apple image"
-                      className="w-full h-auto transition-transform duration-300 hover:scale-110 cursor-pointer"
-                    />
-                    <div className={`absolute z-10 text-white top-2 left-5 ${index === 3 || index === 4 ? "text-black" : "text-white"}`}>
-                      <p className="font-medium">{list.heading1}</p>
-                      <p className="font-semibold text-2xl">{list.heading2}</p>
-                    </div>
+              <SwiperSlide key={index} className="lg:w-1/4 md:w-1/3 sm:w-1/2">
+                <div className=" rounded-3xl overflow-hidden relative">
+                  <img
+                    src={list.image}
+                    alt="apple image"
+                    className="w-full h-auto transition-transform duration-300 hover:scale-110 cursor-pointer"
+                  />
+                  <div
+                    className="absolute z-10 text-white top-2 left-5"
+                    style={{
+                      color: index === 3 || index === 4 ? "black" : "white",
+                    }}
+                  >
+                    <p className="font-medium">{list.heading1}</p>
+                    <p className="font-semibold text-2xl">{list.heading2}</p>
                   </div>
-                </SwiperSlide>
+                </div>
+              </SwiperSlide>
             ))}
           </Swiper>
         </div>
